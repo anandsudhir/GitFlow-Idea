@@ -11,7 +11,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class GitFlowComponent implements ProjectComponent {
 
-    Project myProject;
+    private final Project myProject;
 
     public GitFlowComponent(@NotNull Project project) {
         myProject = project;
@@ -28,7 +28,7 @@ public class GitFlowComponent implements ProjectComponent {
     @Override
     public void projectClosed() {
         GitFlowWidget.getInstance(myProject).dispose();
-        DvcsUtil.removeStatusBarWidget(myProject, GitFlowWidget.getInstance(myProject));
+//        DvcsUtil.removeStatusBarWidget(myProject, GitFlowWidget.getInstance(myProject));
     }
 
     @Override

@@ -21,7 +21,7 @@ public class GitFlowWidget extends EditorBasedWidget implements StatusBarWidget.
 
     private static final String GIT_FLOW = "GitFlow";
 
-    protected GitFlowWidget(@NotNull Project project) {
+    private GitFlowWidget(@NotNull Project project) {
         super(project);
     }
 

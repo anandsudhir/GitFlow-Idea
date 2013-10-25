@@ -34,5 +34,8 @@
 
     <extensions defaultExtensionNs="com.intellij">>
         <projectService serviceInterface="gitflow.ui.GitFlowWidget" serviceImplementation="gitflow.ui.GitFlowWidget"/>
+        <projectService serviceInterface="gitflow.GitFlowService" serviceImplementation="gitflow.GitFlowService"/>
+        <projectService serviceInterface="gitflow.util.GitFlowConfiguration" serviceImplementation="gitflow.util.GitFlowConfiguration"/>
+        <projectService serviceInterface="gitflow.command.GitFlow" serviceImplementation="gitflow.command.GitFlowImpl"/>
     </extensions>
 </idea-plugin>
